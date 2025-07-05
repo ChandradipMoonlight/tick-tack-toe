@@ -63,7 +63,7 @@ const resetGame = () => {
         node.innerText = "";
         node.disabled = false;
     });
-    winner.innerText = "";
+    winnerEle.innerText = "";
 
 }
 
