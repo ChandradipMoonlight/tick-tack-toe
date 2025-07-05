@@ -36,7 +36,7 @@ boxes.forEach(
             boxesClicked ++;
             let isWinner = checkWinner();
             if (isWinner || boxesClicked===9) {
-                    stopGame();
+                stopGame();
             }
         });
     }
