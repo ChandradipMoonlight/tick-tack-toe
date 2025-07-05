@@ -36,6 +36,7 @@ boxes.forEach(
             boxesClicked ++;
             let isWinner = checkWinner();
             if (isWinner || boxesClicked===9) {
+                stopGame();
             }
         });
     }
@@ -62,9 +63,14 @@ const resetGame = () => {
         node.innerText = "";
         node.disabled = false;
     });
-    console.log(winner);
     winner.innerText = "";
 
+}
+
+const stopGame = () => {
+    boxes.forEach(node => {
+        node.disabled = true;
+    });
 }
 
 resetGameButton.addEventListener("click", resetGame);

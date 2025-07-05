@@ -49,3 +49,11 @@ body {
     color: rgb(0, 0, 255);
     padding-bottom: 20px;
 }
+
+footer {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 1rem;
+    color: white;
+}
