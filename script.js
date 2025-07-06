@@ -35,7 +35,10 @@ boxes.forEach(
             node.disabled = true;
             boxesClicked ++;
             let isWinner = checkWinner();
-            if (isWinner || boxesClicked===9) {
+            if (isWinner) {
+                stopGame();
+            } else if (!isWinner && boxesClicked === 9) {
+                winnerEle.innerText = "Game is draw!";
                 stopGame();
             }
         });
